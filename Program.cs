@@ -1,9 +1,20 @@
-﻿// See https://aka.ms/new-console-template for more information
-using NewFeatures.AutoDefaults;
+﻿using NewFeatures.AutoDefaults;
 using NewFeatures.GenericAttributes;
 using NewFeatures.PatternMatching;
+using NewFeatures.StringOperations;
+using System.Reflection;
+
+
+[assembly: AssemblyDescription("My Assembly Description")]
 
 Console.WriteLine("Hello, World!");
+
+
+/*String Interpolation*/
+
+InterpolatedStrings interpolatedStrings = new InterpolatedStrings();
+Console.WriteLine(interpolatedStrings.OldStyleOfInterpolation);
+
 
 var testStruct = new StructExample();
 System.Console.WriteLine($"""
