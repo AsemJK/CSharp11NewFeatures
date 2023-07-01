@@ -3,9 +3,9 @@
     public class ParametrizedClass
     {
         [OldTypeAttribute(typeof(int))]
-        public int DoOldStyleJob { get; set; }
+        public int DoOldStyleJob() => default;
 
         [NewType<int>]
-        public int DoNewStyleJob { get; set; }
+        public int DoNewStyleJob() => default;
     }
 }
