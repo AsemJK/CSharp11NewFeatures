@@ -1,6 +1,6 @@
 namespace NewFeatures.GenericAttributes
 {
-    public class OldTypeAttribute
+    public class OldTypeAttribute : Attribute
     {
         public OldTypeAttribute(Type attributeType)
         {
